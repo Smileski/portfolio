@@ -66,3 +66,14 @@ img {
    text-align: center;
    color: gray;
  }
+ footer {
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+    color: white;
+    height: 15rem;
+}
+.foot {
+  display: inline;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
