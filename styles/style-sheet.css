@@ -1,16 +1,28 @@
 h1 {
-  color: coral;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  border-style: solid;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  text-shadow: white;
+  position: absolute;
+  right: 200px;
+  top: 250px;
+  z-index: 1;
+}
+.banner-image {
+
+}
+menu {
   border-width: 1px;
   border-color: navy;
+  background-color: grey;
 }
 a, h4 {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  height: 20px;
 }
-.font {
+.font-article {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 130px;
+}
+.font-aside {
   font-family: Arial, Helvetica, sans-serif;
 }
 p:hover {
@@ -20,9 +32,9 @@ p:hover {
  }
  p.padding {
    padding-top: 25px;
-   padding-right: 50px;
-   padding-bottom: 75px;
-   padding-left: 100px;
+   padding-right: 25px;
+   padding-bottom: 25px;
+   padding-left: none;
  }
  a[href="assignment1/index.html"] {
         padding: 1rem;
@@ -34,46 +46,81 @@ a[href="#"] {
         color: gray;
         padding-left: 0px;
 }
- ul {
-  list-style-type: none;
-  font-family:Comic Sans MS;
-  margin: 0;
-  padding: 0;
-}
+/*ul {
+ list-style-type: none;
+ font-family:Comic Sans MS;
+ margin: 0;
+ padding: 0;
+}*/
 li {
-  display: inline;
+ display: inline;
 }
 .navigation {
-  display: inline;
-  padding: 8px;
+  display: inline-block;
+  padding: 20px;
   background-color: rgb(240, 240, 240);
+  margin-left: 100px;
+}
 }
 .navigation:hover {
-  color: purple;
-  background-color:#E6E6FA;
+  color: gray;
+  background-color: #dddddd;
 }
 body {
    background-color: WhiteSmoke;
  }
-img {
+/*img {
    border-style: dashed;
    border-color: navy;
    border-width: 2px;
    border-radius: 25px;
    width:100px;
+ }*/
+ center {
+   position: center;
+   margin: auto;
  }
- #personal {
-   text-align: center;
-   color: gray;
- }
- footer {
+
+ footer {/*
     background-color: hsl(0, 0%, 20%);
     text-align: center;
     color: white;
-    height: 15rem;
+    height: 477px;
+    weight: 1628px;*/
+    z-index: -1;
 }
 .foot {
   display: inline;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+}
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+}
+article {
+  width: 50%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: left;
+}
+/*Centered text in footer*/
+/*
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+.container {
+  position: relative;
+  text-align: center;
+  color: gray;
+}
+.text-footer{
+  position: relative;
+  z-index: 1;
 }
