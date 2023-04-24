@@ -26,10 +26,11 @@ a, h4 {
 .font-article {
   font-family: "Times New Roman", serif;
   margin-left: 200px; /*margini levo na tekstot*/
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .font-aside {
-  font-family: "Times New Roman", serif;
+  font-family: "Trirong", serif;
+  font-size: 14px;
 }
 /*p:hover {
  font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +40,7 @@ a, h4 {
  p.padding {
    padding-top: 5px;;
    padding-right: 25px;
+   font-family: "Sofia", sans-serif;
  }
  /*
  a[href="assignment1/index.html"] {
@@ -148,7 +150,7 @@ article {
   position: absolute;
   z-index: 2;
   left: 800px;
-  top: 1350px;
+  top: 1400px;
 }
 .img-padding{
   padding-top: 10px;
@@ -159,4 +161,33 @@ article {
 }
 #banner {
   text-align: center;
+}
+h3 {
+  font-family: "Font Awesome 5 Free";
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 250px;
+  margin: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.flex-container > div > img {
+  width:250px;
+  height: 200px;
+}
+.products-list{
+  font-family: 'Roboto', sans-serif;
+  margin-left: 200px; /*margini levo na tekstot*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }
