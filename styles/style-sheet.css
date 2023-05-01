@@ -82,11 +82,20 @@ li{
   padding-top: 3px;
   padding-bottom: 3px;
 }
-/*
+.menu-nav a:hover {
+  color: blue;
+  background-color: lightblue;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
 .navigation:hover {
   color: gray;
   background-color: #dddddd;
-}*/
+}
 body {
    background-color: white;
  }
@@ -163,7 +172,16 @@ article {
   text-align: center;
 }
 h3 {
+  width: 60%;
   font-family: "Font Awesome 5 Free";
+  transition-property: font-size;
+  transition-duration: 2s;
+  /*transition-property: opacity, left, top, height;
+  transition-duration: 3s, 5s, 3s, 5s;*/
+}
+h3:hover {
+  background-color: rgb(240, 240, 240);
+  font-size: 2em;
 }
 .flex-container {
   display: flex;
@@ -190,4 +208,32 @@ h3 {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
+}
+aside section:nth-child(1n) {
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+}
+aside section a:nth-child(1n) {
+  background-color: lightblue;
+}
+aside section a {
+  transition-property: font-size;
+  transition-duration: 2s;
+}
+aside section a:hover {
+  background-color: forestgreen;
+  font-size: 2em;
+}
+.transition-animation {
+  animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
 }
